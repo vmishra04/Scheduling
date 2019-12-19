@@ -32,14 +32,14 @@
                     <div id="steps">
                         
 
-                        <div id="step-2" class="book-step active-step" title="<?= lang('step_two_title') ?>">
+                        <div id="step-1" class="book-step active-step" title="<?= lang('step_one_title') ?>">
+                            <strong>1</strong>
+                        </div>
+                        <div id="step-2" class="book-step" title="<?= lang('step_two_title') ?>">
                             <strong>2</strong>
                         </div>
                         <div id="step-3" class="book-step" title="<?= lang('step_three_title') ?>">
                             <strong>3</strong>
-                        </div>
-                        <div id="step-4" class="book-step" title="<?= lang('step_four_title') ?>">
-                            <strong>4</strong>
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                 <div id="wizard-frame-2" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
 
-                        <h3 class="frame-title"><?= lang('step_two_title') ?></h3>
+                        <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
 
                         <div class="frame-content row">
                             <div class="col-xs-12 col-sm-6">
@@ -206,7 +206,7 @@
                 <div id="wizard-frame-3" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
 
-                        <h3 class="frame-title"><?= lang('step_three_title') ?></h3>
+                        <h3 class="frame-title"><?= lang('step_two_title') ?></h3>
 
                         <div class="frame-content row">
                             <div class="col-xs-12 col-sm-6">
@@ -294,7 +294,7 @@
 
                 <div id="wizard-frame-4" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
-                        <h3 class="frame-title"><?= lang('step_four_title') ?></h3>
+                        <h3 class="frame-title"><?= lang('step_three_title') ?></h3>
                         <div class="frame-content row">
                             <div id="appointment-details" class="col-xs-12 col-sm-6"></div>
                             <div id="customer-details" class="col-xs-12 col-sm-6"></div>
