@@ -620,19 +620,9 @@ class Appointments extends CI_Controller {
      */
     public function ajax_get_unavailable_dates()
     {
-        $this->output
-                    ->set_content_type('application/json')
-                    ->set_output(json_encode([]));
-                return;
-        /*
         try
         {
-            
-            /*
             $provider_id = $this->input->get('provider_id');
-            $this->output
-                ->set_content_type('application/json')
-                ->set_output(json_encode($provider_id));
             $service_id = $this->input->get('service_id');
             $selected_date_string = $this->input->get('selected_date');
             $selected_date = new DateTime($selected_date_string);
@@ -695,8 +685,6 @@ class Appointments extends CI_Controller {
             $this->output
                 ->set_content_type('application/json')
                 ->set_output(json_encode($unavailable_dates));
-            */ 
-        /*      
         }
         catch (Exception $exc)
         {
@@ -706,7 +694,6 @@ class Appointments extends CI_Controller {
                     'exceptions' => [exceptionToJavaScript($exc)]
                 ]));
         }
-        */
     }
 
     /**
