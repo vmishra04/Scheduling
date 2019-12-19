@@ -163,11 +163,9 @@ CREATE TABLE IF NOT EXISTS `all_data` (
     `first_name` VARCHAR(256),
     `last_name` VARCHAR(512),
     `email` VARCHAR(512),
-    `mobile_number` VARCHAR(128),
     `phone_number` VARCHAR(128),
     `address` VARCHAR(256),
     `city` VARCHAR(256),
-    `state` VARCHAR(128),
     `zip_code` VARCHAR(64),
     PRIMARY KEY (`id`)
 )

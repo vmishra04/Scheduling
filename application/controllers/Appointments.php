@@ -483,17 +483,15 @@ class Appointments extends CI_Controller {
             $customer_id = $this->customers_model->add($customer);
 
             //Custom logic for inserting into alldata
-            $alldata['book_datetime'] =  $appointment['book_datetime'];
+            $alldata['book_datetime'] =  date('Y-m-d H:i:s');
             $alldata['start_datetime'] =  $appointment['start_datetime']; 
             $alldata['end_datetime'] = $appointment['end_datetime'];
             $alldata['first_name'] =  $customer['first_name']; 
             $alldata['last_name'] = $customer['last_name'];
             $alldata['email'] =  $customer['email'];
-            $alldata['mobile_number'] = $customer['mobile_number'];
             $alldata['phone_number'] = $customer['phone_number'];
             $alldata['address'] = $customer['address'];
             $alldata['city'] =  $customer['city']; 
-            $alldata['state'] = $customer['state'];
             $alldata['zip_code'] = $customer['zip_code'];
 
             $alldata_id = $this->alldata_model->add($alldata);
