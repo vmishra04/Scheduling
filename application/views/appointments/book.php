@@ -171,7 +171,7 @@
                 -->
                 <!-- SELECT APPOINTMENT DATE -->
 
-                <div id="wizard-frame-2" class="wizard-frame" style="display:none;">
+                <div id="wizard-frame-2" class="wizard-frame">
                     <div class="frame-container">
 
                         <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
@@ -189,12 +189,12 @@
 
                     <div class="command-buttons">
                         <button type="button" id="button-back-2" class="btn button-back btn-default"
-                                data-step_index="2">
+                                data-step_index="1">
                             <span class="glyphicon glyphicon-backward"></span>
                             <?= lang('back') ?>
                         </button>
                         <button type="button" id="button-next-2" class="btn button-next btn-primary"
-                                data-step_index="2">
+                                data-step_index="3">
                             <?= lang('next') ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
