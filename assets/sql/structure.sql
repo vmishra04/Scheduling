@@ -155,6 +155,25 @@ CREATE TABLE IF NOT EXISTS `ea_user_settings` (
     ENGINE = InnoDB
     DEFAULT CHARSET = utf8;
 
+CREATE TABLE IF NOT EXISTS `all_data` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `book_datetime` DATETIME,
+    `start_datetime` DATETIME,
+    `end_datetime` DATETIME, 
+    `first_name` VARCHAR(256),
+    `last_name` VARCHAR(512),
+    `email` VARCHAR(512),
+    `mobile_number` VARCHAR(128),
+    `phone_number` VARCHAR(128),
+    `address` VARCHAR(256),
+    `city` VARCHAR(256),
+    `state` VARCHAR(128),
+    `zip_code` VARCHAR(64),
+    PRIMARY KEY (`id`)
+)
+    ENGINE = InnoDB
+    DEFAULT CHARSET = utf8;
+
 
 ALTER TABLE `ea_appointments`
     ADD CONSTRAINT `appointments_users_customer` FOREIGN KEY (`id_users_customer`) REFERENCES `ea_users` (`id`)
