@@ -30,18 +30,15 @@
                     <span id="company-name"><?= $company_name ?></span>
 
                     <div id="steps">
-                        <div id="step-1" class="book-step " title="<?= lang('step_one_title') ?>">
+                        
+                        <div id="step-1" class="book-step active-step" title="<?= lang('step_two_title') ?>">
                             <strong>1</strong>
                         </div>
-
-                        <div id="step-2" class="book-step active-step" title="<?= lang('step_two_title') ?>">
+                        <div id="step-2" class="book-step" title="<?= lang('step_three_title') ?>">
                             <strong>2</strong>
                         </div>
-                        <div id="step-3" class="book-step" title="<?= lang('step_three_title') ?>">
+                        <div id="step-3" class="book-step" title="<?= lang('step_four_title') ?>">
                             <strong>3</strong>
-                        </div>
-                        <div id="step-4" class="book-step" title="<?= lang('step_four_title') ?>">
-                            <strong>4</strong>
                         </div>
                     </div>
                 </div>
@@ -297,7 +294,7 @@
                     <div class="frame-container">
                         <h3 class="frame-title"><?= lang('step_four_title') ?></h3>
                         <div class="frame-content row">
-                            <div id="appointment-details" class="col-xs-12 col-sm-6"></div>
+                            <div id="appointment-details" class="col-xs-12 col-sm-6" style="display:none"></div>
                             <div id="customer-details" class="col-xs-12 col-sm-6"></div>
                         </div>
                         <?php if ($this->settings_model->get_setting('require_captcha') === '1'): ?>
@@ -335,16 +332,7 @@
                 <!-- FRAME FOOTER -->
 
                 <div id="frame-footer">
-                    Powered By
-                    <a href="http://easyappointments.org" target="_blank">Easy!Appointments</a>
-                    |
-                    <span id="select-language" class="label label-success">
-    		        	<?= ucfirst($this->config->item('language')) ?>
-    		        </span>
-                    |
-                    <a href="<?= site_url('backend'); ?>">
-                        <?= $this->session->user_id ? lang('backend_section') : lang('login') ?>
-                    </a>
+                    Powered By Gandalf
                 </div>
             </div>
         </div>
