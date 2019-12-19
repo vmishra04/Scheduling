@@ -622,9 +622,7 @@ class Appointments extends CI_Controller {
     {
         try
         {
-            $this->output
-            ->set_content_type('application/json')
-            ->set_output(json_encode("hello"));
+            $this->response(['Item updated successfully.'], REST_Controller::HTTP_OK);
             /*
             $provider_id = $this->input->get('provider_id');
             $this->output
