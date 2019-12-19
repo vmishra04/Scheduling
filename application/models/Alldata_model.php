@@ -38,10 +38,10 @@ class Alldata_Model extends CI_Model {
         }
         else
         {
-            $this->_update($appointment);
+            $this->_update($alldata);
         }
 
-        return $appointment['id'];
+        return $alldata['id'];
     }
 
 
