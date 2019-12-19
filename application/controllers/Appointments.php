@@ -487,16 +487,25 @@ class Appointments extends CI_Controller {
             $alldata['book_datetime'] =  date('Y-m-d H:i:s');
             $alldata['start_datetime'] =  $appointment['start_datetime']; 
             $alldata['end_datetime'] = $appointment['end_datetime'];
-            $alldata['first_name'] =  $customer['first_name']; 
-            $alldata['last_name'] = $customer['last_name'];
+            $alldata['first_name'] =  strtolower($customer['first_name']); 
+            $alldata['last_name'] = strtolower($customer['last_name']);
             $alldata['email'] =  $customer['email'];
             $alldata['phone_number'] = $customer['phone_number'];
             $alldata['address'] = $customer['address'];
             $alldata['city'] =  $customer['city']; 
             $alldata['zip_code'] = $customer['zip_code'];
 
-            $alldata_id = $this->alldata_model->add($alldata);
+            $arr = $customer['defender'].split('.');
+            if(len($arr) > 1){
+                $alldata['defender_fname'] = $arr[0];
+                $alldata['defender_lname'] = $arr[1];
+            }else{
+                $alldata['defender_fname'] = $arr[0];
+                $alldata['defender_lname'] = '';
+            }
 
+            $alldata_id = $this->alldata_model->add($alldata);
+            //End
 
             $appointment['id_users_customer'] = $customer_id;
             $appointment['is_unavailable'] = (int)$appointment['is_unavailable']; // needs to be type casted
