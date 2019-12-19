@@ -154,8 +154,8 @@ window.FrontendBook = window.FrontendBook || {};
             var $selectProvider = $('#select-provider');
             var $selectService = $('#select-service');
 
-            var $selectProvider = "Test Service";
-            var $selectService = "John Doe";
+            console.log($selectProvider);
+            console.log($selectService);
 
             // Check if a specific service was selected (via URL parameter).
             var selectedServiceId = GeneralFunctions.getUrlParameter(location.href, 'service');

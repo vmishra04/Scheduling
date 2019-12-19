@@ -30,11 +30,11 @@
                     <span id="company-name"><?= $company_name ?></span>
 
                     <div id="steps">
-                        <div id="step-1" class="book-step" title="<?= lang('step_one_title') ?>">
+                        <div id="step-1" class="book-step active-step" title="<?= lang('step_one_title') ?>">
                             <strong>1</strong>
                         </div>
 
-                        <div id="step-2" class="book-step active" title="<?= lang('step_two_title') ?>">
+                        <div id="step-2" class="book-step" title="<?= lang('step_two_title') ?>">
                             <strong>2</strong>
                         </div>
                         <div id="step-3" class="book-step" title="<?= lang('step_three_title') ?>">
@@ -83,7 +83,7 @@
 
                 <!-- SELECT SERVICE AND PROVIDER -->
 
-                <div id="wizard-frame-1" class="wizard-frame" style="display:none;">
+                <div id="wizard-frame-1" class="wizard-frame">
                     <div class="frame-container">
                         <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
 
@@ -171,7 +171,7 @@
 
                 <!-- SELECT APPOINTMENT DATE -->
 
-                <div id="wizard-frame-2" class="wizard-frame" >
+                <div id="wizard-frame-2" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
 
                         <h3 class="frame-title"><?= lang('step_two_title') ?></h3>
