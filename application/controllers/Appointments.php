@@ -623,6 +623,9 @@ class Appointments extends CI_Controller {
         try
         {
             $provider_id = $this->input->get('provider_id');
+            $this->output
+                ->set_content_type('application/json')
+                ->set_output(json_encode($provider_id));
             $service_id = $this->input->get('service_id');
             $selected_date_string = $this->input->get('selected_date');
             $selected_date = new DateTime($selected_date_string);

@@ -154,7 +154,7 @@ window.FrontendBook = window.FrontendBook || {};
             var $selectProvider = $('#select-provider');
             var $selectService = $('#select-service');
 
-            console.log($('#select-service').val());
+            //console.log($('#select-service').val());
             //console.log($selectService);
 
             // Check if a specific service was selected (via URL parameter).
