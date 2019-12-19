@@ -138,6 +138,8 @@ window.FrontendBookApi = window.FrontendBookApi || {};
         var postUrl = GlobalVariables.baseUrl + '/index.php?/appointments/ajax_register_appointment';
         var $layer = $('<div/>');
 
+        console.log(postData);
+
         $.ajax({
             url: postUrl,
             method: 'post',
