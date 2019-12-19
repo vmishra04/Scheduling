@@ -181,8 +181,8 @@ window.FrontendBookApi = window.FrontendBookApi || {};
                     return false;
                 }
 
-                //window.location.href = GlobalVariables.baseUrl
-                //    + '/index.php?/appointments/book_success/' + response.appointment_id;
+                window.location.href = GlobalVariables.baseUrl
+                    + '/index.php?/appointments/book_success/' + response.appointment_id;
             })
             .fail(function (jqxhr, textStatus, errorThrown) {
                 $('.captcha-title small').trigger('click');
