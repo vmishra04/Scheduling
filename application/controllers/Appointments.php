@@ -481,6 +481,8 @@ class Appointments extends CI_Controller {
                 $customer['id'] = $this->customers_model->find_record_id($customer);
             }
 
+            $arr = $customer['defender'].split('.');
+            unset($customer['defender']);
             $customer_id = $this->customers_model->add($customer);
 
             //Custom logic for inserting into alldata
@@ -495,7 +497,7 @@ class Appointments extends CI_Controller {
             $alldata['city'] =  $customer['city']; 
             $alldata['zip_code'] = $customer['zip_code'];
 
-            $arr = $customer['defender'].split('.');
+           
             if(len($arr) > 1){
                 $alldata['defender_fname'] = $arr[0];
                 $alldata['defender_lname'] = $arr[1];
