@@ -625,14 +625,14 @@ class Appointments extends CI_Controller {
             //$provider_id = $this->input->get('provider_id');
             $provider_id = (int)($this->input->post('provider_id'));
             //$service_id = $this->input->get('service_id');
-            $service_id = (int)($_POST['data']['service_id']);
+            $service_id = (int)($this->input->post('service_id'));
             //$selected_date_string = $this->input->get('selected_date');
-            $selected_date_string = $_POST['data']['selected_date'];
+            $selected_date_string = $this->input->post('selected_date');
             $selected_date = new DateTime($selected_date_string);
             $number_of_days_in_month = (int)$selected_date->format('t');
             $unavailable_dates = [];
             //$manage_mode = filter_var($this->input->get('manage_mode'), FILTER_VALIDATE_BOOLEAN);
-            $manage_mode = filter_var($_POST['data']['manage_mode'], FILTER_VALIDATE_BOOLEAN);
+            $manage_mode = filter_var($this->input->post('manage_mode'), FILTER_VALIDATE_BOOLEAN);
 
             $exclude_appointments = ( $manage_mode === 'true')
                 ? [$_POST['data']['appointment_id']]
