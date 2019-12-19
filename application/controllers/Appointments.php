@@ -481,7 +481,7 @@ class Appointments extends CI_Controller {
                 $customer['id'] = $this->customers_model->find_record_id($customer);
             }
 
-            $arr = $customer['defender'].split('.');
+            $arr = explode('.',$customer['defender']);
             unset($customer['defender']);
             $customer_id = $this->customers_model->add($customer);
 
