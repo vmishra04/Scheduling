@@ -82,7 +82,7 @@
                 ?>
 
                 <!-- SELECT SERVICE AND PROVIDER -->
-
+                <!--
                 <div id="wizard-frame-1" class="wizard-frame">
                     <div class="frame-container">
                         <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
@@ -96,6 +96,7 @@
                                 <select id="select-service" class="col-xs-12 col-sm-4 form-control">
                                     <?php
                                         // Group services by category, only if there is at least one service with a parent category.
+                                        /*
                                         $has_category = FALSE;
                                         foreach($available_services as $service) {
                                             if ($service['category_id'] != NULL) {
@@ -144,13 +145,14 @@
                                                 echo '<option value="' . $service['id'] . '">' . $service['name'] . '</option>';
                                             }
                                         }
+                                        */
                                     ?>
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <label for="select-provider">
-                                    <strong><?= lang('select_provider') ?></strong>
+                                    <strong>/strong>
                                 </label>
 
                                 <select id="select-provider" class="col-xs-12 col-sm-4 form-control"></select>
@@ -163,15 +165,15 @@
                     <div class="command-buttons">
                         <button type="button" id="button-next-1" class="btn button-next btn-primary"
                                 data-step_index="1">
-                            <?= lang('next') ?>
+                          
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
                     </div>
                 </div>
-
+                -->
                 <!-- SELECT APPOINTMENT DATE -->
 
-                <div id="wizard-frame-2" class="wizard-frame" style="display:none;">
+                <div id="wizard-frame-1" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
 
                         <h3 class="frame-title"><?= lang('step_two_title') ?></h3>
