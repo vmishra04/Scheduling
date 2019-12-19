@@ -30,16 +30,18 @@
                     <span id="company-name"><?= $company_name ?></span>
 
                     <div id="steps">
-                        
-
                         <div id="step-1" class="book-step active-step" title="<?= lang('step_one_title') ?>">
                             <strong>1</strong>
                         </div>
+
                         <div id="step-2" class="book-step" title="<?= lang('step_two_title') ?>">
                             <strong>2</strong>
                         </div>
                         <div id="step-3" class="book-step" title="<?= lang('step_three_title') ?>">
                             <strong>3</strong>
+                        </div>
+                        <div id="step-4" class="book-step" title="<?= lang('step_four_title') ?>">
+                            <strong>4</strong>
                         </div>
                     </div>
                 </div>
@@ -80,21 +82,20 @@
                 ?>
 
                 <!-- SELECT SERVICE AND PROVIDER -->
-                <!--
+
                 <div id="wizard-frame-1" class="wizard-frame">
                     <div class="frame-container">
-                        <h3 class="frame-title"></h3>
+                        <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
 
                         <div class="frame-content">
                             <div class="form-group">
                                 <label for="select-service">
-                                    <strong></strong>
+                                    <strong><?= lang('select_service') ?></strong>
                                 </label>
 
                                 <select id="select-service" class="col-xs-12 col-sm-4 form-control">
-                                    
+                                    <?php
                                         // Group services by category, only if there is at least one service with a parent category.
-                                        /*
                                         $has_category = FALSE;
                                         foreach($available_services as $service) {
                                             if ($service['category_id'] != NULL) {
@@ -143,14 +144,13 @@
                                                 echo '<option value="' . $service['id'] . '">' . $service['name'] . '</option>';
                                             }
                                         }
-                                        */
-                                    
+                                    ?>
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <label for="select-provider">
-                                    <strong>/strong>
+                                    <strong><?= lang('select_provider') ?></strong>
                                 </label>
 
                                 <select id="select-provider" class="col-xs-12 col-sm-4 form-control"></select>
@@ -163,18 +163,18 @@
                     <div class="command-buttons">
                         <button type="button" id="button-next-1" class="btn button-next btn-primary"
                                 data-step_index="1">
-                          
+                            <?= lang('next') ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
                     </div>
                 </div>
-                -->
+
                 <!-- SELECT APPOINTMENT DATE -->
 
-                <div id="wizard-frame-2" class="wizard-frame">
+                <div id="wizard-frame-2" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
 
-                        <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
+                        <h3 class="frame-title"><?= lang('step_two_title') ?></h3>
 
                         <div class="frame-content row">
                             <div class="col-xs-12 col-sm-6">
@@ -189,12 +189,12 @@
 
                     <div class="command-buttons">
                         <button type="button" id="button-back-2" class="btn button-back btn-default"
-                                data-step_index="1">
+                                data-step_index="2">
                             <span class="glyphicon glyphicon-backward"></span>
                             <?= lang('back') ?>
                         </button>
                         <button type="button" id="button-next-2" class="btn button-next btn-primary"
-                                data-step_index="3">
+                                data-step_index="2">
                             <?= lang('next') ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
@@ -206,7 +206,7 @@
                 <div id="wizard-frame-3" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
 
-                        <h3 class="frame-title"><?= lang('step_two_title') ?></h3>
+                        <h3 class="frame-title"><?= lang('step_three_title') ?></h3>
 
                         <div class="frame-content row">
                             <div class="col-xs-12 col-sm-6">
@@ -294,7 +294,7 @@
 
                 <div id="wizard-frame-4" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
-                        <h3 class="frame-title"><?= lang('step_three_title') ?></h3>
+                        <h3 class="frame-title"><?= lang('step_four_title') ?></h3>
                         <div class="frame-content row">
                             <div id="appointment-details" class="col-xs-12 col-sm-6"></div>
                             <div id="customer-details" class="col-xs-12 col-sm-6"></div>
