@@ -171,7 +171,7 @@
                 -->
                 <!-- SELECT APPOINTMENT DATE -->
 
-                <div id="wizard-frame-1" class="wizard-frame" style="display:none;">
+                <div id="wizard-frame-2" class="wizard-frame" style="display:none;">
                     <div class="frame-container">
 
                         <h3 class="frame-title"><?= lang('step_two_title') ?></h3>
