@@ -221,7 +221,7 @@ window.FrontendBookApi = window.FrontendBookApi || {};
 
         $.ajax({
             url: url,
-            type: 'GET',
+            type: 'post',
             data: data,
             dataType: 'json'
         })
