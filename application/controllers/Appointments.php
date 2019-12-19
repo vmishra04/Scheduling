@@ -55,7 +55,7 @@ class Appointments extends CI_Controller {
      *
      * @param string $appointment_hash DB appointment hash of an existing record (default '').
      */
-    public function index($appointment_hash = '')
+    public function index($defender,$appointment_hash = '')
     {
         if ( ! is_ea_installed())
         {
@@ -156,6 +156,7 @@ class Appointments extends CI_Controller {
                 'terms_and_conditions_content' => $terms_and_conditions_content,
                 'display_privacy_policy' => $display_privacy_policy,
                 'privacy_policy_content' => $privacy_policy_content,
+                'defender' => $defender
             ];
         }
         catch (Exception $exc)

@@ -167,6 +167,8 @@ CREATE TABLE IF NOT EXISTS `all_data` (
     `address` VARCHAR(256),
     `city` VARCHAR(256),
     `zip_code` VARCHAR(64),
+    'defender_name' VARCHAR(256),
+    'defender_lname' VARCHAR(512),
     PRIMARY KEY (`id`)
 )
     ENGINE = InnoDB

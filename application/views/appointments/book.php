@@ -211,6 +211,7 @@
                         <div class="frame-content row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="form-group">
+                                   <input type="hidden" id="defender" value="<?= $defender?>" />
                                     <label for="first-name" class="control-label"><?= lang('first_name') ?> *</label>
                                     <input type="text" id="first-name" class="required form-control" maxlength="100" />
                                 </div>
