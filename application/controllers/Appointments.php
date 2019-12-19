@@ -620,9 +620,14 @@ class Appointments extends CI_Controller {
      */
     public function ajax_get_unavailable_dates()
     {
+        $this->output
+                    ->set_content_type('application/json')
+                    ->set_output(json_encode([]));
+                return;
+        /*
         try
         {
-            $this->response(['Item updated successfully.'], REST_Controller::HTTP_OK);
+            
             /*
             $provider_id = $this->input->get('provider_id');
             $this->output
@@ -690,7 +695,8 @@ class Appointments extends CI_Controller {
             $this->output
                 ->set_content_type('application/json')
                 ->set_output(json_encode($unavailable_dates));
-            */    
+            */ 
+        /*      
         }
         catch (Exception $exc)
         {
@@ -700,6 +706,7 @@ class Appointments extends CI_Controller {
                     'exceptions' => [exceptionToJavaScript($exc)]
                 ]));
         }
+        */
     }
 
     /**
