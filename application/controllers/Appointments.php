@@ -498,7 +498,7 @@ class Appointments extends CI_Controller {
             $alldata['zip_code'] = $customer['zip_code'];
 
            
-            if(len($arr) > 1){
+            if(count($arr) > 1){
                 $alldata['defender_fname'] = $arr[0];
                 $alldata['defender_lname'] = $arr[1];
             }else{
