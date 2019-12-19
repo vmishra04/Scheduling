@@ -622,6 +622,10 @@ class Appointments extends CI_Controller {
     {
         try
         {
+            $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode("hello"));
+            /*
             $provider_id = $this->input->get('provider_id');
             $this->output
                 ->set_content_type('application/json')
@@ -688,6 +692,7 @@ class Appointments extends CI_Controller {
             $this->output
                 ->set_content_type('application/json')
                 ->set_output(json_encode($unavailable_dates));
+            */    
         }
         catch (Exception $exc)
         {
