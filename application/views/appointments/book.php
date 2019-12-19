@@ -83,16 +83,16 @@
                 <!--
                 <div id="wizard-frame-1" class="wizard-frame">
                     <div class="frame-container">
-                        <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
+                        <h3 class="frame-title"></h3>
 
                         <div class="frame-content">
                             <div class="form-group">
                                 <label for="select-service">
-                                    <strong><?= lang('select_service') ?></strong>
+                                    <strong></strong>
                                 </label>
 
                                 <select id="select-service" class="col-xs-12 col-sm-4 form-control">
-                                    <?php
+                                    
                                         // Group services by category, only if there is at least one service with a parent category.
                                         /*
                                         $has_category = FALSE;
@@ -144,7 +144,7 @@
                                             }
                                         }
                                         */
-                                    ?>
+                                    
                                 </select>
                             </div>
 
