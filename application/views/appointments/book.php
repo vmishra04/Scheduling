@@ -30,11 +30,9 @@
                     <span id="company-name"><?= $company_name ?></span>
 
                     <div id="steps">
-                        <div id="step-1" class="book-step active-step" title="<?= lang('step_one_title') ?>">
-                            <strong>1</strong>
-                        </div>
+                        
 
-                        <div id="step-2" class="book-step" title="<?= lang('step_two_title') ?>">
+                        <div id="step-2" class="book-step active-step" title="<?= lang('step_two_title') ?>">
                             <strong>2</strong>
                         </div>
                         <div id="step-3" class="book-step" title="<?= lang('step_three_title') ?>">
