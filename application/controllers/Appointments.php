@@ -623,7 +623,7 @@ class Appointments extends CI_Controller {
         try
         {
             //$provider_id = $this->input->get('provider_id');
-            $provider_id = (int)($_POST['data']['provider_id']);
+            $provider_id = (int)($this->input->post('provider_id'));
             //$service_id = $this->input->get('service_id');
             $service_id = (int)($_POST['data']['service_id']);
             //$selected_date_string = $this->input->get('selected_date');
